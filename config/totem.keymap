@@ -38,22 +38,22 @@
         };
 
         backspace {
-            bindings = <&mt LS(LEFT_ALT) BACKSPACE>;
+            bindings = <&shiftalt_bsp>;
             key-positions = <17 18>;
         };
 
         enter {
-            bindings = <&mt LC(LEFT_SHIFT) ENTER>;
+            bindings = <&ctrlshift_enter>;
             key-positions = <16 17>;
         };
 
         backspace_left {
-            bindings = <&mt LS(LEFT_ALT) BACKSPACE>;
+            bindings = <&shiftalt_bsp>;
             key-positions = <12 11>;
         };
 
         enter_left {
-            bindings = <&mt LC(LEFT_SHIFT) ENTER>;
+            bindings = <&ctrlshift_enter>;
             key-positions = <12 13>;
         };
 
@@ -100,6 +100,24 @@
         ttt {
             bindings = <&kp LS(T)>;
             key-positions = <4 3>;
+        };
+    };
+
+    behaviors {
+        shiftalt_bsp: shiftalt_bsp {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SHIFTALT_BSP";
+            #binding-cells = <0>;
+            tapping-term-ms = <170>;
+            bindings = <&mt LS(LEFT_ALT) BACKSPACE>, <&kp BACKSPACE>;
+        };
+
+        ctrlshift_enter: ctrlshift_enter {
+            compatible = "zmk,behavior-tap-dance";
+            label = "CTRLSHIFT_ENTER";
+            #binding-cells = <0>;
+            tapping-term-ms = <170>;
+            bindings = <&mt LS(LEFT_ALT) ENTER>, <&kp ENTER>;
         };
     };
 
