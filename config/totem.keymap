@@ -36,6 +36,46 @@
             bindings = <&bt BT_CLR_ALL>;
             key-positions = <27 28 35 29 30>;
         };
+
+        backspace {
+            bindings = <&mt LS(LEFT_ALT) BACKSPACE>;
+            key-positions = <17 18>;
+        };
+
+        enter {
+            bindings = <&mt LC(LEFT_SHIFT) ENTER>;
+            key-positions = <16 17>;
+        };
+
+        backspace_left {
+            bindings = <&mt LS(LEFT_ALT) BACKSPACE>;
+            key-positions = <12 11>;
+        };
+
+        enter_left {
+            bindings = <&mt LC(LEFT_SHIFT) ENTER>;
+            key-positions = <12 13>;
+        };
+
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <8 9>;
+        };
+
+        esc_left {
+            bindings = <&kp ESCAPE>;
+            key-positions = <0 1>;
+        };
+
+        del {
+            bindings = <&kp DELETE>;
+            key-positions = <7 8>;
+        };
+
+        del_left {
+            bindings = <&kp DELETE>;
+            key-positions = <2 1>;
+        };
     };
 
     keymap {
