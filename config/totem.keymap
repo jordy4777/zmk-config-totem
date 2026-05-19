@@ -77,21 +77,6 @@
             key-positions = <2 1>;
         };
 
-        qqq {
-            bindings = <&kp LS(Q)>;
-            key-positions = <0 10>;
-        };
-
-        www {
-            bindings = <&kp LS(W)>;
-            key-positions = <1 0>;
-        };
-
-        eee {
-            bindings = <&kp LS(E)>;
-            key-positions = <2 1>;
-        };
-
         rrr {
             bindings = <&kp LS(R)>;
             key-positions = <3 2>;
