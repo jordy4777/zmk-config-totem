@@ -37,24 +37,9 @@
             key-positions = <27 28 35 29 30>;
         };
 
-        backspace {
-            bindings = <&shiftalt_bsp>;
-            key-positions = <17 18>;
-        };
-
         enter {
-            bindings = <&ctrlshift_enter>;
+            bindings = <&mt LC(LEFT_SHIFT) ENTER>;
             key-positions = <16 17>;
-        };
-
-        backspace_left {
-            bindings = <&shiftalt_bsp>;
-            key-positions = <12 11>;
-        };
-
-        enter_left {
-            bindings = <&ctrlshift_enter>;
-            key-positions = <12 13>;
         };
 
         esc {
@@ -84,7 +69,22 @@
 
         ttt {
             bindings = <&kp LS(T)>;
-            key-positions = <4 3>;
+            key-positions = <1 2>;
+        };
+
+        enter_left {
+            bindings = <&mt LC(LEFT_SHIFT) ENTER>;
+            key-positions = <13 12>;
+        };
+
+        backspace {
+            bindings = <&mt LS(LEFT_ALT) BACKSPACE>;
+            key-positions = <17 18>;
+        };
+
+        backspace_left {
+            bindings = <&mt LS(LEFT_ALT) BACKSPACE>;
+            key-positions = <12 11>;
         };
     };
 
