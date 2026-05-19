@@ -42,8 +42,8 @@
             key-positions = <16 17>;
         };
 
-        esc {
-            bindings = <&kp ESCAPE>;
+        oooo {
+            bindings = <&kp O>;
             key-positions = <8 9>;
         };
 
@@ -85,6 +85,11 @@
         backspace_left {
             bindings = <&mt LS(LEFT_ALT) BACKSPACE>;
             key-positions = <12 11>;
+        };
+
+        pppp {
+            bindings = <&kp LS(P)>;
+            key-positions = <18 19>;
         };
     };
 
