@@ -84,22 +84,22 @@
 
         www {
             bindings = <&kp LS(W)>;
-            key-positions = <11 1>;
+            key-positions = <1 0>;
         };
 
         eee {
             bindings = <&kp LS(E)>;
-            key-positions = <12 2>;
+            key-positions = <2 1>;
         };
 
         rrr {
             bindings = <&kp LS(R)>;
-            key-positions = <3 13>;
+            key-positions = <3 2>;
         };
 
         ttt {
             bindings = <&kp LS(T)>;
-            key-positions = <4 14>;
+            key-positions = <4 3>;
         };
     };
 
