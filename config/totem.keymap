@@ -91,6 +91,11 @@
             bindings = <&kp LS(P)>;
             key-positions = <18 19>;
         };
+
+        tab_left {
+            bindings = <&kp TAB>;
+            key-positions = <11 10>;
+        };
     };
 
     behaviors {
