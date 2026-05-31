@@ -42,8 +42,8 @@
             key-positions = <16 17>;
         };
 
-        oooo {
-            bindings = <&kp O>;
+        escr {
+            bindings = <&kp ESCAPE>;
             key-positions = <8 9>;
         };
 
@@ -62,33 +62,23 @@
             key-positions = <2 1>;
         };
 
-        rrr {
-            bindings = <&kp LS(R)>;
-            key-positions = <3 2>;
-        };
-
-        ttt {
-            bindings = <&kp LS(T)>;
-            key-positions = <3 1>;
-        };
-
         enter_left {
             bindings = <&mt LC(LEFT_SHIFT) ENTER>;
             key-positions = <13 12>;
         };
 
         backspace {
-            bindings = <&mt LS(LEFT_ALT) BACKSPACE>;
+            bindings = <&kp BACKSPACE>;
             key-positions = <17 18>;
         };
 
         backspace_left {
-            bindings = <&mt LS(LEFT_ALT) BACKSPACE>;
+            bindings = <&kp LS(BACKSPACE)>;
             key-positions = <12 11>;
         };
 
-        pppp {
-            bindings = <&kp LS(P)>;
+        tabr {
+            bindings = <&kp TAB>;
             key-positions = <18 19>;
         };
 
@@ -138,10 +128,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-         &kp Q           &kp W           &kp E             &kp R        &kp T    &kp Y  &kp U        &kp I             &kp O           &kp DEL
-         &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LCTRL F  &kp G    &kp H  &mt LCTRL J  &mt LEFT_SHIFT K  &mt LEFT_ALT L  &mt LEFT_GUI P
-&kp TAB  &kp Z           &kp X           &kp C             &kp V        &kp B    &kp B  &kp N        &kp M             &kp RIGHT_ALT   &kp CAPSLOCK    &kp ENTER
-                                         &kp ESC           &kp SPACE    &mo 1    &mo 2  &kp SPACE    &kp BACKSPACE
+         &mt LS(Q) Q     &mt LS(W) W     &mt LS(E) E       &mt LS(R) R  &mt LS(T) T    &kp Y  &kp U        &kp I             &kp O           &kp DEL
+         &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LCTRL F  &kp G          &kp H  &mt LCTRL J  &mt LEFT_SHIFT K  &mt LEFT_ALT L  &mt LEFT_GUI P
+&kp TAB  &kp Z           &kp X           &kp C             &kp V        &kp B          &kp B  &kp N        &kp M             &kp RIGHT_ALT   &kp CAPSLOCK    &kp ENTER
+                                         &kp ESC           &kp SPACE    &mo 1          &mo 2  &kp SPACE    &kp BACKSPACE
             >;
         };
 
