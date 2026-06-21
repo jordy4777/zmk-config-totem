@@ -138,7 +138,7 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp Q           &kp W           &kp E             &kp R        &kp T    &kp Y  &kp U        &kp I             &kp O           &mt COMMA PERIOD
+        &kp Q           &kp W           &kp E             &kp R        &kp T    &kp Y  &kp U        &kp I             &kp O           &mt PERIOD COMMA
         &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LCTRL F  &kp G    &kp H  &mt LCTRL J  &mt LEFT_SHIFT K  &mt LEFT_ALT L  &mt LEFT_GUI P
 &trans  &kp Z           &kp X           &kp C             &kp V        &kp B    &kp B  &kp N        &kp M             &kp RIGHT_ALT   &kp CAPSLOCK      &trans
                                         &mo 4             &mo 3        &mo 2    &mo 1  &kp SPACE    &trans
@@ -190,10 +190,10 @@
 
         layer_4 {
             bindings = <
-        &trans        &kp O          &kp I   &kp U   &kp Y     &trans  &trans  &trans  &trans  &trans
-        &kp P         &kp L          &kp K   &kp J   &kp H     &trans  &trans  &trans  &trans  &trans
-&trans  &kp CAPSLOCK  &kp RIGHT_ALT  &kp M   &kp N   &kp B     &trans  &trans  &trans  &trans  &trans  &trans
-                                     &trans  &trans  &trans    &trans  &trans  &trans
+     &kp           &kp O          &kp I  &kp U  &kp Y    &kp  &kp F9  &kp F10  &kp F11  &kp F12
+     &kp P         &kp L          &kp K  &kp J  &kp H    &kp  &kp F5  &kp F6   &kp F7   &kp F8
+&kp  &kp CAPSLOCK  &kp RIGHT_ALT  &kp M  &kp N  &kp B    &kp  &kp F1  &kp F2   &kp F3   &kp F4   &kp
+                                  &kp    &kp    &kp      &kp  &kp     &kp
             >;
         };
     };
