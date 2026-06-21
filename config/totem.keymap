@@ -171,10 +171,10 @@
         SYM {
             label = "SYM";
             bindings = <
-        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp GRAVE  &kp TILDE          &trans            &trans         &kp LS(N7)        &kp LS(N8)        &kp LS(N9)        &trans
-        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL  &kp MINUS          &kp UNDERSCORE    &kp LS(COMMA)  &kp LS(NUMBER_4)  &kp LS(N5)        &kp LS(NUMBER_6)  &kp LS(PERIOD)
-&trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SQT    &kp DOUBLE_QUOTES  &kp F2            &trans         &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &trans          &trans
-                                                     &trans     &trans             &trans            &trans         &trans            &kp LS(N0)
+        &trans         &trans         &trans     &trans     &trans      &trans         &kp LS(N7)        &kp LS(N8)        &kp LS(N9)        &trans
+        &kp SEMICOLON  &kp COLON      &kp EQUAL  &kp MINUS  &kp PLUS    &kp LS(COMMA)  &kp LS(NUMBER_4)  &kp LS(N5)        &kp LS(NUMBER_6)  &kp LS(PERIOD)
+&trans  &kp QUESTION   &kp BACKSLASH  &kp PIPE   &kp SLASH  &trans      &trans         &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &trans          &trans
+                                      &trans     &trans     &trans      &trans         &trans            &kp LS(N0)
             >;
         };
     };
