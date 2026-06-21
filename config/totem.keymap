@@ -86,6 +86,11 @@
             bindings = <&kp TAB>;
             key-positions = <11 10>;
         };
+
+        left-space {
+            bindings = <&kp SPACE>;
+            key-positions = <23 24>;
+        };
     };
 
     behaviors {
