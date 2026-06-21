@@ -96,6 +96,11 @@
             bindings = <&kp SPACE>;
             key-positions = <27 28>;
         };
+
+        combo-layer {
+            bindings = <&mo 4>;
+            key-positions = <33 34>;
+        };
     };
 
     behaviors {
@@ -138,9 +143,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp Q           &kp W           &kp E             &kp R        &kp T    &kp Y  &kp U        &kp I             &kp O           &mt PERIOD COMMA
-        &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LCTRL F  &kp G    &kp H  &mt LCTRL J  &mt LEFT_SHIFT K  &mt LEFT_ALT L  &mt LEFT_GUI P
-&trans  &kp Z           &kp X           &kp C             &kp V        &kp B    &kp B  &kp N        &kp M             &kp RIGHT_ALT   &kp CAPSLOCK      &trans
+        &kp Q           &kp W           &kp E             &kp R        &kp T    &kp Y  &kp U        &kp I             &kp O                   &mt EXCLAMATION QUESTION
+        &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LCTRL F  &kp G    &kp H  &mt LCTRL J  &mt LEFT_SHIFT K  &mt LEFT_ALT L          &mt LEFT_GUI P
+&trans  &kp Z           &kp X           &kp C             &kp V        &kp B    &kp B  &kp N        &kp M             &mt CAPSLOCK RIGHT_ALT  &mt PERIOD COMMA          &trans
                                         &mo 4             &mo 3        &mo 2    &mo 1  &kp SPACE    &trans
             >;
         };
@@ -171,10 +176,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp UNDERSCORE  &kp F2             &trans       &trans     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp N9           &trans
-        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL       &kp MINUS          &kp TILDE    &kp COMMA  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PERIOD
-&trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SQT         &kp DOUBLE_QUOTES  &kp GRAVE    &trans     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans      &trans
-                                                     &trans          &trans             &trans       &trans     &trans           &kp KP_NUMBER_0
+        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp TILDE  &kp F2             &trans            &trans     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans
+        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL  &kp MINUS          &kp UNDERSCORE    &kp COMMA  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PERIOD
+&trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SQT    &kp DOUBLE_QUOTES  &kp GRAVE         &trans     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans      &trans
+                                                     &trans     &trans             &trans            &trans     &trans           &kp KP_NUMBER_0
             >;
         };
 
@@ -183,17 +188,17 @@
             bindings = <
         &trans         &trans         &trans     &trans     &trans      &trans         &kp LS(N7)        &kp LS(N8)        &kp LS(N9)        &trans
         &kp SEMICOLON  &kp COLON      &kp EQUAL  &kp MINUS  &kp PLUS    &kp LS(COMMA)  &kp LS(NUMBER_4)  &kp LS(N5)        &kp LS(NUMBER_6)  &kp LS(PERIOD)
-&trans  &kp QUESTION   &kp BACKSLASH  &kp PIPE   &kp SLASH  &trans      &trans         &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &trans          &trans
+&trans  &trans         &kp BACKSLASH  &kp PIPE   &kp SLASH  &trans      &trans         &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &trans          &trans
                                       &trans     &trans     &trans      &trans         &trans            &kp LS(N0)
             >;
         };
 
         layer_4 {
             bindings = <
-     &kp           &kp O          &kp I  &kp U  &kp Y    &kp  &kp F9  &kp F10  &kp F11  &kp F12
-     &kp P         &kp L          &kp K  &kp J  &kp H    &kp  &kp F5  &kp F6   &kp F7   &kp F8
-&kp  &kp CAPSLOCK  &kp RIGHT_ALT  &kp M  &kp N  &kp B    &kp  &kp F1  &kp F2   &kp F3   &kp F4   &kp
-                                  &kp    &kp    &kp      &kp  &kp     &kp
+        &mt EXCLAMATION QUESTION  &kp O                   &kp I   &kp U   &kp Y     &trans  &kp F9  &kp F10  &kp F11  &kp F12
+        &kp P                     &kp L                   &kp K   &kp J   &kp H     &trans  &kp F5  &kp F6   &kp F7   &kp F8
+&trans  &mt PERIOD COMMA          &mt CAPSLOCK RIGHT_ALT  &kp M   &kp N   &kp B     &trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans
+                                                          &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
