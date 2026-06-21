@@ -154,10 +154,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SQT           &kp DOUBLE_QUOTES  &trans    &trans               &mt LS(N7) N7              &mt LS(N8) N8              &mt LS(N9) N9              &trans
-        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &trans    &mt LS(COMMA) COMMA  &mt LS(NUMBER_4) NUMBER_4  &mt LS(N5) N5              &mt LS(NUMBER_6) NUMBER_6  &mt LS(PERIOD) PERIOD
-&trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp COMMA         &kp PERIOD         &kp F2    &trans               &mt LS(NUMBER_1) NUMBER_1  &mt LS(NUMBER_2) NUMBER_2  &mt LS(NUMBER_3) NUMBER_3  &trans                 &trans
-                                                     &trans            &trans             &trans    &trans               &trans                     &mt LS(NUMBER_0) N0
+        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp GRAVE  &kp TILDE          &trans            &trans     &kp N7        &kp N8        &kp N9        &trans
+        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL  &kp MINUS          &kp UNDERSCORE    &kp COMMA  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PERIOD
+&trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp SQT    &kp DOUBLE_QUOTES  &kp F2            &trans     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans      &trans
+                                                     &trans     &trans             &trans            &trans     &trans        &kp N0
             >;
         };
 
