@@ -101,6 +101,16 @@
             bindings = <&mo 4>;
             key-positions = <33 34>;
         };
+
+        left-ralt-caps {
+            bindings = <&mt CAPSLOCK RIGHT_ALT>;
+            key-positions = <21 22>;
+        };
+
+        right-ralt-caps {
+            bindings = <&mt CAPSLOCK RIGHT_ALT>;
+            key-positions = <29 30>;
+        };
     };
 
     behaviors {
@@ -143,10 +153,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp Q           &kp W           &kp E             &kp R        &kp T    &kp Y  &kp U        &kp I             &kp O           &kp QUESTION
-        &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LCTRL F  &kp G    &kp H  &mt LCTRL J  &mt LEFT_SHIFT K  &mt LEFT_ALT L  &mt LEFT_GUI P
-&trans  &kp Z           &kp X           &kp C             &kp V        &kp B    &kp B  &kp N        &kp M             &kp COMMA       &kp PERIOD      &kp EXCL
-                                        &mo 4             &mo 3        &mo 2    &mo 1  &kp SPACE    &trans
+       &kp Q           &kp W           &kp E             &kp R        &kp T    &kp Y  &kp U        &kp I             &kp O           &kp QUESTION
+       &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LCTRL F  &kp G    &kp H  &mt LCTRL J  &mt LEFT_SHIFT K  &mt LEFT_ALT L  &mt LEFT_GUI P
+&mo 5  &kp Z           &kp X           &kp C             &kp V        &kp B    &kp B  &kp N        &kp M             &kp COMMA       &kp PERIOD      &kp EXCL
+                                       &mo 4             &mo 3        &mo 2    &mo 1  &kp SPACE    &trans
             >;
         };
 
@@ -159,10 +169,10 @@
             >;
         };
 
-        sym1-num {
+        sym-num {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
-            label = "sym1-num";
+            label = "sym-num";
 
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
@@ -176,29 +186,37 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &mt RIGHT_BRACKET LEFT_BRACKET          &mt TILDE GRAVE                 &mt PIPE BACKSLASH  &mt UNDERSCORE PIPE  &trans    &kp LESS_THAN  &mt LS(N7) N7              &mt LS(N8) N8              &mt LS(N9) N9              &kp GREATER_THAN
-        &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &mt DOUBLE_QUOTES SINGLE_QUOTE  &mt COLON SEMI      &mt PLUS MINUS       &trans    &kp PLUS       &mt LS(NUMBER_4) NUMBER_4  &mt LS(N5) N5              &mt LS(NUMBER_6) NUMBER_6  &kp COMMA
-&trans  &mt RIGHT_BRACE LEFT_BRACE              &trans                          &trans              &trans               &trans    &kp ASTERISK   &mt LS(NUMBER_1) NUMBER_1  &mt LS(NUMBER_2) NUMBER_2  &mt LS(NUMBER_3) NUMBER_3  &kp SLASH         &kp PERIOD
-                                                                                &trans              &trans               &trans    &trans         &trans                     &mt LS(N0) N0
+        &mt RIGHT_BRACKET LEFT_BRACKET          &mt TILDE GRAVE                 &mt PIPE BACKSLASH  &mt UNDERSCORE PIPE  &kp SLASH    &kp LESS_THAN  &mt LS(N7) N7              &mt LS(N8) N8              &mt LS(N9) N9              &kp GREATER_THAN
+        &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &mt DOUBLE_QUOTES SINGLE_QUOTE  &mt COLON SEMI      &mt PLUS MINUS       &trans       &kp PLUS       &mt LS(NUMBER_4) NUMBER_4  &mt LS(N5) N5              &mt LS(NUMBER_6) NUMBER_6  &kp COMMA
+&trans  &mt RIGHT_BRACE LEFT_BRACE              &trans                          &trans              &trans               &trans       &kp ASTERISK   &mt LS(NUMBER_1) NUMBER_1  &mt LS(NUMBER_2) NUMBER_2  &mt LS(NUMBER_3) NUMBER_3  &kp SLASH         &kp PERIOD
+                                                                                &trans              &trans               &trans       &trans         &trans                     &mt LS(N0) N0
             >;
         };
 
-        sym2 {
-            label = "sym2";
+        left-char {
             bindings = <
-        &kp RIGHT_BRACKET      &kp TILDE  &kp PIPE  &kp UNDERSCORE  &trans    &trans  &kp LS(N7)        &kp LS(N8)        &kp LS(N9)        &trans
-        &kp RIGHT_PARENTHESIS  &trans     &trans    &trans          &trans    &trans  &kp LS(NUMBER_4)  &kp LS(N5)        &kp LS(NUMBER_6)  &trans
-&trans  &kp RIGHT_BRACE        &trans     &trans    &trans          &trans    &trans  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &trans  &trans
-                                          &trans    &trans          &trans    &trans  &trans            &kp LS(N0)
+          &kp QUESTION  &kp O      &kp I   &kp U   &kp Y     &trans  &kp F9  &kp F10  &kp F11  &kp F12
+          &kp P         &kp L      &kp K   &kp J   &kp H     &trans  &kp F5  &kp F6   &kp F7   &kp F8
+&kp EXCL  &kp PERIOD    &kp COMMA  &kp M   &kp N   &kp B     &trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans
+                                   &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
-        layer_4 {
+        left-nav {
             bindings = <
-                        &mt EXCLAMATION QUESTION  &kp O      &kp I   &kp U   &kp Y     &trans  &kp F9  &kp F10  &kp F11  &kp F12
-                        &kp P                     &kp L      &kp K   &kp J   &kp H     &trans  &kp F5  &kp F6   &kp F7   &kp F8
-&mt CAPSLOCK RIGHT_ALT  &kp PERIOD                &kp COMMA  &kp M   &kp N   &kp B     &trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans
-                                                             &trans  &trans  &trans    &trans  &trans  &trans
+        &kp END   &kp PAGE_DOWN  &kp PG_UP     &kp HOME   &trans    &trans  &trans  &trans  &trans  &trans
+        &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans    &trans         &trans        &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                 &trans        &trans     &trans    &trans  &trans  &trans
+            >;
+        };
+
+        left-sym-num {
+            bindings = <
+        &trans  &mt LS(N9) N9              &mt LS(N8) N8              &mt LS(N7) N7              &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &mt LS(NUMBER_6) NUMBER_6  &mt LS(N5) N5              &mt LS(NUMBER_4) NUMBER_4  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &mt LS(NUMBER_3) NUMBER_3  &mt LS(NUMBER_2) NUMBER_2  &mt LS(NUMBER_1) N1        &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                           &mt LS(N0) N0              &trans                     &trans    &trans  &trans  &trans
             >;
         };
     };
