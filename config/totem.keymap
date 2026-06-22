@@ -104,12 +104,12 @@
 
         left-ralt-caps {
             bindings = <&mt CAPSLOCK RIGHT_ALT>;
-            key-positions = <21 22>;
+            key-positions = <22 23>;
         };
 
         right-ralt-caps {
             bindings = <&mt CAPSLOCK RIGHT_ALT>;
-            key-positions = <29 30>;
+            key-positions = <29 28>;
         };
     };
 
