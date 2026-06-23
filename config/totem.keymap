@@ -186,10 +186,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &mt RIGHT_BRACKET LEFT_BRACKET          &mt TILDE GRAVE                 &mt PIPE BACKSLASH  &mt UNDERSCORE PIPE  &kp SLASH    &kp LESS_THAN  &mt LS(N7) N7              &mt LS(N8) N8              &mt LS(N9) N9              &kp GREATER_THAN
-        &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &mt DOUBLE_QUOTES SINGLE_QUOTE  &mt COLON SEMI      &mt PLUS MINUS       &trans       &kp PLUS       &mt LS(NUMBER_4) NUMBER_4  &mt LS(N5) N5              &mt LS(NUMBER_6) NUMBER_6  &kp COMMA
-&trans  &mt RIGHT_BRACE LEFT_BRACE              &trans                          &trans              &trans               &trans       &kp ASTERISK   &mt LS(NUMBER_1) NUMBER_1  &mt LS(NUMBER_2) NUMBER_2  &mt LS(NUMBER_3) NUMBER_3  &kp SLASH         &kp PERIOD
-                                                                                &trans              &trans               &trans       &trans         &trans                     &mt LS(N0) N0
+        &mt RIGHT_BRACKET LEFT_BRACKET          &mt TILDE GRAVE                 &mt PIPE BACKSLASH  &mt PLUS EQUAL   &kp SLASH    &kp LESS_THAN  &mt LS(N7) N7              &mt LS(N8) N8              &mt LS(N9) N9              &kp GREATER_THAN
+        &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &mt DOUBLE_QUOTES SINGLE_QUOTE  &mt COLON SEMI      &mt UNDER MINUS  &trans       &kp PLUS       &mt LS(NUMBER_4) NUMBER_4  &mt LS(N5) N5              &mt LS(NUMBER_6) NUMBER_6  &kp COMMA
+&trans  &mt RIGHT_BRACE LEFT_BRACE              &trans                          &trans              &trans           &trans       &kp ASTERISK   &mt LS(NUMBER_1) NUMBER_1  &mt LS(NUMBER_2) NUMBER_2  &mt LS(NUMBER_3) NUMBER_3  &kp SLASH         &kp PERIOD
+                                                                                &trans              &trans           &trans       &trans         &trans                     &mt LS(N0) N0
             >;
         };
 
