@@ -39,7 +39,7 @@
 
         enter {
             bindings = <&kp ENTER>;
-            key-positions = <16 17>;
+            key-positions = <7 6>;
         };
 
         escr {
@@ -64,7 +64,7 @@
 
         enter_left {
             bindings = <&kp ENTER>;
-            key-positions = <13 12>;
+            key-positions = <3 2>;
         };
 
         backspace {
