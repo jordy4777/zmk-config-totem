@@ -111,6 +111,16 @@
             bindings = <&mt CAPSLOCK RIGHT_ALT>;
             key-positions = <29 28>;
         };
+
+        caps-right {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <29 30>;
+        };
+
+        caps-left {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <22 21>;
+        };
     };
 
     behaviors {
