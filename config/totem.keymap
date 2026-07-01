@@ -163,10 +163,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp Q           &kp W           &kp E               &kp R             &kp T    &kp Y  &kp U             &kp I               &kp O           &kp QUESTION
-        &mt LEFT_GUI A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G    &kp H  &mt LEFT_SHIFT J  &mt LEFT_CONTROL K  &mt LEFT_ALT L  &mt LEFT_GUI P
-&trans  &kp Z           &kp X           &kp C               &kp V             &kp B    &kp B  &kp N             &kp M               &kp COMMA       &kp PERIOD      &kp EXCL
-                                        &mo 5               &mo 3             &mo 2    &mo 1  &kp SPACE         &trans
+                &kp Q  &kp W       &kp E           &kp R           &kp T    &kp Y  &kp U        &kp I           &kp O       &kp QUESTION
+                &kp A  &mt LWIN S  &mt LEFT_ALT D  &mt LCTRL F     &kp G    &kp H  &mt LCTRL J  &mt LEFT_ALT K  &mt LWIN L  &kp P
+&kp LEFT_SHIFT  &kp Z  &kp X       &kp C           &kp V           &kp B    &kp B  &kp N        &kp M           &kp COMMA   &kp PERIOD    &kp LEFT_SHIFT
+                                   &mo 5           &kp LEFT_SHIFT  &mo 2    &mo 1  &kp SPACE    &trans
             >;
         };
 
