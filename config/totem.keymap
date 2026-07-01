@@ -44,12 +44,12 @@
 
         escr {
             bindings = <&kp ESCAPE>;
-            key-positions = <8 9>;
+            key-positions = <8 9 7>;
         };
 
         esc_left {
             bindings = <&kp ESCAPE>;
-            key-positions = <0 1>;
+            key-positions = <0 1 2>;
         };
 
         del {
@@ -67,24 +67,14 @@
             key-positions = <3 2>;
         };
 
-        backspace {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <17 18>;
-        };
-
-        backspace_left {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <12 11>;
-        };
-
-        tabr {
+        right-tab {
             bindings = <&kp TAB>;
-            key-positions = <18 19>;
+            key-positions = <9 8>;
         };
 
-        tab_left {
+        left-tab {
             bindings = <&kp TAB>;
-            key-positions = <11 10>;
+            key-positions = <1 0>;
         };
 
         left-space {
@@ -92,13 +82,13 @@
             key-positions = <23 24>;
         };
 
-        right-space {
-            bindings = <&kp SPACE>;
+        right-bsp {
+            bindings = <&kp BACKSPACE>;
             key-positions = <27 28>;
         };
 
         combo-layer {
-            bindings = <&mo 4>;
+            bindings = <&mo 3>;
             key-positions = <33 34>;
         };
 
@@ -163,10 +153,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                &kp Q  &kp W       &kp E           &kp R           &kp T    &kp Y  &kp U        &kp I           &kp O       &kp QUESTION
-                &kp A  &mt LWIN S  &mt LEFT_ALT D  &mt LCTRL F     &kp G    &kp H  &mt LCTRL J  &mt LEFT_ALT K  &mt LWIN L  &kp P
-&kp LEFT_SHIFT  &kp Z  &kp X       &kp C           &kp V           &kp B    &kp B  &kp N        &kp M           &kp COMMA   &kp PERIOD    &kp LEFT_SHIFT
-                                   &mo 5           &kp LEFT_SHIFT  &mo 2    &mo 1  &kp SPACE    &trans
+               &kp Q             &kp W       &kp E        &kp R           &kp T    &kp Y  &kp U           &kp I        &kp O       &kp EXCLAMATION
+               &mt LEFT_SHIFT A  &mt LWIN S  &mt LCTRL D  &mt LEFT_ALT F  &kp G    &kp H  &mt LEFT_ALT J  &mt LCTRL K  &mt LWIN L  &mt LEFT_SHIFT P
+&kp BACKSPACE  &kp Z             &kp X       &kp C        &kp V           &kp B    &kp B  &kp N           &kp M        &kp COMMA   &kp PERIOD        &kp QUESTION
+                                             &mo 3        &mo 4           &mo 2    &mo 1  &kp SPACE       &kp LSHIFT
             >;
         };
 
@@ -198,7 +188,7 @@
             bindings = <
         &mt RIGHT_BRACKET LEFT_BRACKET          &mt TILDE GRAVE                 &mt PIPE BACKSLASH  &mt PLUS EQUAL   &kp SLASH    &kp LESS_THAN  &mt LS(N7) N7              &mt LS(N8) N8              &mt LS(N9) N9              &kp GREATER_THAN
         &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &mt DOUBLE_QUOTES SINGLE_QUOTE  &mt COLON SEMI      &mt UNDER MINUS  &trans       &kp PLUS       &mt LS(NUMBER_4) NUMBER_4  &mt LS(N5) N5              &mt LS(NUMBER_6) NUMBER_6  &kp COMMA
-&trans  &mt RIGHT_BRACE LEFT_BRACE              &trans                          &kp COMMA           &kp PERIOD       &trans       &kp ASTERISK   &mt LS(NUMBER_1) NUMBER_1  &mt LS(NUMBER_2) NUMBER_2  &mt LS(NUMBER_3) NUMBER_3  &kp PERIOD        &trans
+&trans  &mt RIGHT_BRACE LEFT_BRACE              &trans                          &kp COMMA           &kp EXCLAMATION  &trans       &kp ASTERISK   &mt LS(NUMBER_1) NUMBER_1  &mt LS(NUMBER_2) NUMBER_2  &mt LS(NUMBER_3) NUMBER_3  &kp PERIOD        &trans
                                                                                 &trans              &trans           &trans       &trans         &trans                     &mt LS(N0) N0
             >;
         };
@@ -214,10 +204,10 @@
 
         left-char {
             bindings = <
-          &kp QUESTION  &kp O      &kp I   &kp U   &kp Y     &trans  &trans  &trans  &trans  &trans
-          &kp P         &kp L      &kp K   &kp J   &kp H     &trans  &trans  &trans  &trans  &trans
-&kp EXCL  &kp PERIOD    &kp COMMA  &kp M   &kp N   &kp B     &trans  &trans  &trans  &trans  &trans  &trans
-                                   &trans  &trans  &trans    &trans  &trans  &trans
+              &kp EXCLAMATION  &kp O      &kp I   &kp U   &kp Y     &trans  &trans  &trans  &trans  &trans
+              &kp P            &kp L      &kp K   &kp J   &kp H     &trans  &trans  &trans  &trans  &trans
+&kp QUESTION  &kp PERIOD       &kp COMMA  &kp M   &kp N   &kp B     &trans  &trans  &trans  &trans  &trans  &trans
+                                          &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
@@ -227,6 +217,15 @@
         &mt LS(N0) N0  &mt LS(NUMBER_6) NUMBER_6  &mt LS(N5) N5              &mt LS(NUMBER_4) NUMBER_4  &trans    &trans  &trans  &trans  &trans  &trans
 &trans  &trans         &mt LS(NUMBER_3) NUMBER_3  &mt LS(NUMBER_2) NUMBER_2  &mt LS(NUMBER_1) N1        &trans    &trans  &trans  &trans  &trans  &trans  &trans
                                                   &trans                     &trans                     &trans    &trans  &trans  &trans
+            >;
+        };
+
+        layer_6 {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
