@@ -67,13 +67,13 @@
             key-positions = <3 2>;
         };
 
-        left-tab {
-            bindings = <&kp TAB>;
+        left-hanja {
+            bindings = <&kp RCTRL>;
             key-positions = <1 2>;
         };
 
-        left-space {
-            bindings = <&kp SPACE>;
+        left-del {
+            bindings = <&kp DELETE>;
             key-positions = <23 22>;
         };
 
@@ -82,8 +82,8 @@
             key-positions = <33 34>;
         };
 
-        right-alt {
-            bindings = <&kp RIGHT_ALT>;
+        right-del {
+            bindings = <&kp DELETE>;
             key-positions = <29 28>;
         };
 
@@ -133,10 +133,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                &kp Q  &kp W       &kp E        &kp R           &kp T    &kp Y  &kp U           &kp I        &kp O       &kp QUESTION
-                &kp A  &mt LWIN S  &mt LCTRL D  &mt LEFT_ALT F  &kp G    &kp H  &mt LEFT_ALT J  &mt LCTRL K  &mt LWIN L  &kp P
-&sk LEFT_SHIFT  &kp Z  &kp X       &kp C        &kp V           &kp B    &kp B  &kp N           &kp M        &kp COMMA   &kp PERIOD    &sk LEFT_SHIFT
-                                   &kp DELETE   &mo 3           &mo 2    &mo 1  &kp SPACE       &kp DELETE
+                &kp Q  &kp W       &kp E        &kp R           &kp T    &kp Y  &kp U           &kp I          &kp O       &kp QUESTION
+                &kp A  &mt LWIN S  &mt LCTRL D  &mt LEFT_ALT F  &kp G    &kp H  &mt LEFT_ALT J  &mt LCTRL K    &mt LWIN L  &kp P
+&sk LEFT_SHIFT  &kp Z  &kp X       &kp C        &kp V           &kp B    &kp B  &kp N           &kp M          &kp COMMA   &kp PERIOD    &sk LEFT_SHIFT
+                                   &kp TAB      &mo 3           &mo 2    &mo 1  &kp SPACE       &kp RIGHT_ALT
             >;
         };
 
