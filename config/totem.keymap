@@ -204,10 +204,10 @@
 
         left-char {
             bindings = <
-              &kp EXCLAMATION  &kp O      &kp I   &kp U   &kp Y     &trans  &trans  &trans  &trans  &trans
-              &kp P            &kp L      &kp K   &kp J   &kp H     &trans  &trans  &trans  &trans  &trans
-&kp QUESTION  &kp PERIOD       &kp COMMA  &kp M   &kp N   &kp B     &trans  &trans  &trans  &trans  &trans  &trans
-                                          &trans  &trans  &trans    &trans  &trans  &trans
+              &kp EXCLAMATION  &kp O      &kp I  &kp U  &kp Y    &kp  &kp F9  &kp F10  &kp F11  &kp F12
+              &kp P            &kp L      &kp K  &kp J  &kp H    &kp  &kp F5  &kp F6   &kp F7   &kp F8
+&kp QUESTION  &kp PERIOD       &kp COMMA  &kp M  &kp N  &kp B    &kp  &kp F1  &kp F2   &kp F3   &kp F4   &kp
+                                          &kp    &kp    &kp      &kp  &kp     &kp
             >;
         };
 
