@@ -57,7 +57,7 @@
             key-positions = <27 28>;
         };
 
-        left-bsp {
+        left-sp {
             bindings = <&kp BACKSPACE>;
             key-positions = <24 23>;
         };
@@ -74,7 +74,7 @@
 
         left-del {
             bindings = <&kp DELETE>;
-            key-positions = <23 22>;
+            key-positions = <23 22 24>;
         };
 
         combo-layer {
@@ -90,6 +90,11 @@
         right-caps {
             bindings = <&kp CAPSLOCK>;
             key-positions = <7 8>;
+        };
+
+        left-bsp {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <23 22>;
         };
     };
 
