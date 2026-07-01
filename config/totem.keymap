@@ -52,17 +52,17 @@
             key-positions = <0 1 2>;
         };
 
-        del {
-            bindings = <&kp DELETE>;
+        right-bsp {
+            bindings = <&kp BACKSPACE>;
             key-positions = <7 8>;
         };
 
-        del_left {
+        left-del {
             bindings = <&kp DELETE>;
             key-positions = <2 1>;
         };
 
-        enter_left {
+        left-enter {
             bindings = <&kp ENTER>;
             key-positions = <3 2>;
         };
@@ -148,10 +148,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                &kp Q            &kp W       &kp E        &kp R           &kp T    &kp Y  &kp U           &kp I        &kp O       &mt EXCLAMATION QUESTION
-                &mt BACKSPACE A  &mt LWIN S  &mt LCTRL D  &mt LEFT_ALT F  &kp G    &kp H  &mt LEFT_ALT J  &mt LCTRL K  &mt LWIN L  &mt BACKSPACE P
-&kp LEFT_SHIFT  &kp Z            &kp X       &kp C        &kp V           &kp B    &kp B  &kp N           &kp M        &kp COMMA   &kp PERIOD                &kp LEFT_SHIFT
-                                             &mo 3        &mo 4           &mo 2    &mo 1  &kp SPACE       &kp LSHIFT
+                &kp Q  &kp W       &kp E          &kp R           &kp T    &kp Y  &kp U           &kp I        &kp O       &kp QUESTION
+                &kp A  &mt LWIN S  &mt LCTRL D    &mt LEFT_ALT F  &kp G    &kp H  &mt LEFT_ALT J  &mt LCTRL K  &mt LWIN L  &kp P
+&kp LEFT_SHIFT  &kp Z  &kp X       &kp C          &kp V           &kp B    &kp B  &kp N           &kp M        &kp COMMA   &kp PERIOD    &kp LEFT_SHIFT
+                                   &kp BACKSPACE  &mo 4           &mo 2    &mo 1  &kp SPACE       &kp DELETE
             >;
         };
 
@@ -164,10 +164,10 @@
             >;
         };
 
-        sym-num {
+        sym-num-1 {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
-            label = "sym-num";
+            label = "sym-num-1";
 
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
@@ -181,20 +181,22 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &mt RIGHT_BRACKET LEFT_BRACKET          &mt TILDE GRAVE                 &mt PIPE BACKSLASH  &mt PLUS EQUAL   &kp SLASH    &kp LESS_THAN  &mt LS(N7) N7              &mt LS(N8) N8              &mt LS(N9) N9              &kp GREATER_THAN
-        &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &mt DOUBLE_QUOTES SINGLE_QUOTE  &mt COLON SEMI      &mt UNDER MINUS  &trans       &kp PLUS       &mt LS(NUMBER_4) NUMBER_4  &mt LS(N5) N5              &mt LS(NUMBER_6) NUMBER_6  &kp COMMA
-&trans  &mt RIGHT_BRACE LEFT_BRACE              &trans                          &kp COMMA           &kp EXCLAMATION  &trans       &kp ASTERISK   &mt LS(NUMBER_1) NUMBER_1  &mt LS(NUMBER_2) NUMBER_2  &mt LS(NUMBER_3) NUMBER_3  &kp PERIOD        &trans
-                                                                                &trans              &trans           &trans       &trans         &trans                     &mt LS(N0) N0
+        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GRAVE          &kp EQUAL        &kp SLASH    &kp LESS_THAN  &mt LS(N7) N7              &mt LS(N8) N8              &mt LS(N9) N9              &kp GREATER_THAN
+        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp DOUBLE_QUOTES  &kp MINUS        &kp UNDER    &kp PLUS       &mt LS(NUMBER_4) NUMBER_4  &mt LS(N5) N5              &mt LS(NUMBER_6) NUMBER_6  &kp COMMA
+&trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp GRAVE          &kp EXCLAMATION  &trans       &kp ASTERISK   &mt LS(NUMBER_1) NUMBER_1  &mt LS(NUMBER_2) NUMBER_2  &mt LS(NUMBER_3) NUMBER_3  &kp PERIOD        &trans
+                                                     &trans             &trans           &trans       &trans         &trans                     &mt LS(N0) N0
             >;
         };
 
-        left-nav {
+        sym-num-2 {
             bindings = <
-        &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans    &trans  &kp F9  &kp F10  &kp F11  &kp F12
-        &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans    &trans  &kp F5  &kp F6   &kp F7   &kp F8
-&trans  &kp LEFT  &kp DOWN  &kp UP_ARROW  &kp RIGHT  &trans    &trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans
-                            &trans        &trans     &trans    &trans  &trans  &trans
+        &kp LEFT       &kp DOWN          &kp UP_ARROW  &kp RIGHT  &trans    &trans  &kp F9  &kp F10  &kp F11  &kp F12
+        &kp LESS_THAN  &kp GREATER_THAN  &kp SQT       &kp RIGHT  &trans    &trans  &kp F5  &kp F6   &kp F7   &kp F8
+&trans  &kp LEFT       &kp DOWN          &kp TILDE     &kp RIGHT  &trans    &trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans
+                                         &trans        &trans     &trans    &trans  &trans  &trans
             >;
+
+            label = "sym-num-2";
         };
 
         left-char {
