@@ -93,7 +93,7 @@
         };
 
         left-sp {
-            bindings = <&kp BACKSPACE>;
+            bindings = <&kp SPACE>;
             key-positions = <23 22 24>;
         };
     };
